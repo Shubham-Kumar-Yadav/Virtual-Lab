@@ -1,0 +1,385 @@
+
+
+
+
+
+
+
+.bg-blue-chan {
+	background-color: #010B26!important
+}
+
+
+
+.font-white-chan {
+	color: #ffffff;
+}
+
+.active-chan {
+	color: #C30B25!important
+}
+
+.shift-nav {
+	float: right;
+}
+
+.label-marge {
+	margin-top: 4.7%;
+}
+
+.my_chan {
+	border-radius: 0;
+	border: 0;
+}
+
+
+
+
+
+
+
+.inner_cards{
+    overflow: hidden;
+}
+
+.inner_cards img{
+    transition: all 1.5s ease;
+}
+
+.inner_cards:hover img{
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+.img-jmbo {
+	background-image: url('img/bg_new.svg');
+	background-size: 100%;
+}
+
+
+@media (min-width: 768px) {
+	#con1 {
+		max-width: 621px;
+	}
+}
+
+
+
+
+
+
+
+
+#con1 {
+	width: 100%;
+	margin-top: 50px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (max-width: 424px) {
+	.cho {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.display-4 {
+	text-align: center;
+	font-size: 3.5rem;
+	font-weight: 300;
+	line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+	.cho {
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media (max-width:560px) {
+	#logo_phone {
+		width: 61%;
+	}
+}
+
+#logo_phone {
+	width: 150px;
+}
+
+/* The footer is fixed to the bottom of the page */
+
+.bg-footer {
+	background-color: #1C2331;
+}
+
+.copy-bg {
+	background-color: black;
+}
+
+
+
+
+
+
+
+#imgc{
+    background-color: #365eca;
+    
+}
+
+#imgc img{
+    width: 25%;
+    margin-left: 2%;
+    padding-right: 9px;
+}
+#imgc p{
+    margin-left: -124px;
+    text-align: center;
+    padding: 0px 110px 68px 522px;
+    color: white;
+}
+
+@media (max-width: 1280px){
+    #imgc{
+        height: 181px;;
+    }
+}
+
+@media(max-width: 1098px){
+    #imgc p{
+        margin: -131px 51px 0px 0px;
+        padding: 0px 98px 67px 524px;
+    }
+}
+
+@media(max-width: 1089px){
+    #imgc p{
+        padding: 0px 89px 0px 505px;
+    }
+}
+
+@media(max-width: 1060px){
+    #imgc p{
+        margin: -141px 51px 0px 0px;
+    }
+}
+
+@media(max-width: 959px){
+    #imgc p{
+        margin: -158px 51px 0px 0px;
+    }
+}
+
+@media(max-width: 897px){
+    #imgc p{
+        margin: -168px 51px 0px 0px;
+    }
+}
+
+@media(max-width: 863px){
+    #imgc p{
+        margin: -160px 29px 0px -38px;
+    }
+}
+
+@media(max-width: 837px){
+    #imgc p{
+        margin: -160px 20px 0px -38px;
+    }
+}
+
+@media(max-width: 828px){
+    #imgc p{
+        margin: -160px 12px 0px -68px;
+    }
+}
+
+@media(max-width: 790px){
+    #imgc p{
+        margin: -160px 28px 0px -85px;
+    }
+    #imgc img{
+        margin: -98px 0px -78px 22px;
+        padding: 0px;
+    }
+}
+
+@media(max-width: 754px){
+    #imgc p{
+        margin: -160px 28px 0px -118px;
+    }
+}
+
+@media(max-width: 721px){
+    #imgc p{
+        margin: -160px 28px 0px -130px;
+    }
+    #imgc img{
+        margin: -98px 0px -80px 12px;
+    }
+}
+
+@media(max-width: 710px){
+    #imgc p{
+        margin: -160px 28px 0px -158px;
+    }
+    #imgc img{
+        margin: -98px 0px -80px -2px;
+    }
+}
+
+@media(max-width: 682px){
+    #imgc p{
+        margin: -160px 28px 0px -173px;
+    }
+}
+
+@media(max-width: 667px){
+    #imgc p{
+        margin: -154px -7px 0px -173px;
+    }
+}
+
+@media(max-width: 631px){
+    #imgc p{
+        margin: -154px -7px 0px -200px;
+    }
+    #imgc img{
+        margin: -98px 0px -80px -25px;
+    }
+}
+
+@media(max-width: 596px){
+    #imgc p{
+        margin: -162px -39px 0px -200px;
+    }
+    #imgc img{
+        margin: -98px 0px -80px -28px;
+    }
+}
+
+@media(max-width: 558px){
+    #imgc p{
+        margin: -162px -39px 0px -223px;
+    }
+    #imgc img{
+        margin: -98px 0px -80px -35px;
+    }
+}
+
+@media(max-width: 535px){
+    #imgc p{
+        margin: -162px -39px 0px -242px;
+    }
+    #imgc img{
+        margin: -98px 0px -80px -44px;
+    }
+}
+
+@media(max-width: 515px){
+    #imgc p{
+        margin: -163px -59px 0px -248px;
+    }
+}
+
+/* @media(max-width: 460px){
+    #imgc p{
+        margin: -168px -82px 0px -262px;
+    }
+} */
+
+@media(max-width: 460px){
+    #imgc p{
+        margin: 95px 0px 0px -412px;
+    }
+    #imgc img{
+        margin: -98px 0px -163px 52px;
+        padding: 0px;
+    }
+    #imgc{
+        height: 318px;
+    }
+}
+
+@media(max-width: 432px){
+    #imgc img{
+        margin: -98px 0px -163px 41px;
+    }
+}
+
+@media(max-width: 411px){
+    #imgc img{
+        margin: -98px 0px -163px 30px;
+    }
+    #imgc{
+        height: 348px;
+    }
+}
+
+@media(max-width: 393px){
+    #imgc img{
+        margin: -98px 0px -163px 19px;
+    }
+    #imgc{
+        height: 294px;
+    }
+    #imgc p{
+        margin: 95px -80px 0px -493px ;
+    }
+}
+
+@media(max-width: 366px){
+    #imgc img{
+        margin: -98px 0px -163px 6px;
+    }
+}
+
+@media(max-width: 341px){
+    #imgc img{
+        margin: -98px 0px -163px -10px;
+    }
+}
+ 
+@media(max-width: 323px){
+    #imgc img{
+        margin: -98px 0px -163px -18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  /* tabular observation for ball mill */
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
