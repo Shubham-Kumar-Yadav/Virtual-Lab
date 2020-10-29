@@ -138,11 +138,11 @@ fs.writeFileSync('./views/store.json', value);
 
 });
 
-router.get('/rotap',function(req,res){
-  res.sendFile(path.join(__dirname+'/rotap.html'));
+router.get('/rotapsieve',function(req,res){
+  res.sendFile(path.join(__dirname+'/rotap_sieve.html'));
 });
 
-router.get('/rotapobservation',function(req,res){
+router.get('/rotapsieveobservation',function(req,res){
   var temp = JSON.parse(JSON.stringify(req.query));
   let M = 0;
     for (let i = 0; i < 5; i++) {
