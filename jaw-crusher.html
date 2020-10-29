@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Ball Mill Experiment: Virtual Lab</title>
+
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/blue.svg" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/blue.svg">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+    <!-- Web Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400" rel="stylesheet" type="text/css">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="vendor/animate/animate.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/theme-elements.css">
+    <link rel="stylesheet" href="css/theme-blog.css">
+    <link rel="stylesheet" href="css/theme-shop.css">
+
+
+    <!-- Skin CSS -->
+    <link rel="stylesheet" href="css/skins/default.css">
+    <script src="master/style-switcher/style.switcher.localstorage.js"></script>
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Head Libs -->
+    <script src="vendor/modernizr/modernizr.min.js"></script>
+
+
+    <!-- Lab CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <SCRIPT SRC='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></SCRIPT>
+    <SCRIPT>
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ]
+            }
+        })
+    </SCRIPT>
+</head>
+
+<body data-spy="scroll" data-target="#sidebar" data-offset="120">
+    <div class="body">
+        <header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+            <div class="header-body header-body-bottom-border-fixed bg-blue-chan">
+                <div class="header-container container">
+                    <div class="header-row">
+                        <div class="header-column">
+                            <div class="header-row">
+                                <div class="header-logo">
+                                    <a href="index.html">
+                                        <img alt="Virtual Lab" width="100" height="48" data-sticky-width="82" data-sticky-height="40" src="img/Icon ionic-logo-buffer.svg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-column justify-content-end">
+                            <div class="header-row">
+                                <div class="header-nav header-nav-line header-nav-top-line header-nav-top-line-with-border order-2 order-lg-1">
+                                    <div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
+                                        <nav class="collapse">
+                                            <ul class="nav nav-pills" id="mainNav">
+                                                <li class="dropdown"> <a class="dropdown-item dropdown-toggle text-light" href="index.html"> Home </a>
+
+                                                </li>
+                                                <li class="dropdown"> <a class="dropdown-item dropdown-toggle active active-chan" href="#">
+														Experiment </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-submenu"> <a class="dropdown-item" href="ball_mill.html">Ball Mill</a>
+
+                                                        </li>
+                                                        <li class="dropdown-submenu"> <a class="dropdown-item" href="#">Settling</a>
+
+                                                        </li>
+                                                        <li class="dropdown-submenu"> <a class="dropdown-item" href="jaw_crusher.html">Jaw Crusher</a>
+
+                                                        </li>
+                                                        <li class="dropdown-submenu"> <a class="dropdown-item" href="#">Rotap Sieve Shaker</a>
+
+                                                        </li>
+                                                        <li class="dropdown-submenu"> <a class="dropdown-item" href="#">Filteration</a>
+
+                                                        </li>
+                                                        <li class="dropdown-submenu"> <a class="dropdown-item" href="#">Experiment</a>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </li>
+                                                <li class="dropdown"> <a class="dropdown-item dropdown-toggle text-light" href="about-us.html">
+														About Us </a>
+
+                                                </li>
+                                                <li class="dropdown"> <a class="dropdown-item dropdown-toggle text-light" href="#"> Team
+													</a>
+
+                                                </li>
+                                                <li class="dropdown"> <a class="dropdown-item dropdown-toggle text-light" href="contact.html">
+														Contact </a>
+
+                                                </li>
+
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+										<i class="fa fa-bars"></i>
+									</button>
+                                </div>
+                                <div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
+                                    <div class="header-nav-feature header-nav-features-search d-inline-flex"> <a href="#" class="header-nav-features-toggle" data-focus="headerSearch"><i
+												class="fas fa-search header-nav-top-icon"></i></a>
+                                        <div class="header-nav-features-dropdown" id="headerTopSearchDropdown">
+                                            <form role="search" action="#" method="get">
+                                                <div class="simple-search input-group"> <input class="form-control text-1" id="headerSearch" name="q" type="search" value="" placeholder="Search..."> <span class="input-group-append"> <button class="btn" type="submit">
+															<i class="fa fa-search header-nav-top-icon"></i> </button>
+													</span> </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div role="main" class="main">
+            <section class="page-header page-header-classic">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <ul class="breadcrumb">
+                                <li class="active"><a href="#">Experiment</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col p-static">
+                            <h1 data-title-border>Jaw Crusher</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container py-2">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+                            <h5 class="font-weight-bold">Context</h5>
+                            <ul class="nav nav-list flex-column mb-5">
+                                <li class="nav-item"><a class="nav-link" href="#first">Aim</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#second">Theory</a>
+                                    <!-- <ul>
+										<li class="nav-item"><a class="nav-link" href="#sub-second-1">1800's: Golden
+												Ratio</a></li>
+										<li class="nav-item"><a class="nav-link" href="#sub-second-2">1900's: Phi</a>
+										</li>
+										<li class="nav-item"><a class="nav-link" href="#sub-second-3">Phi in Maths and
+												Physics</a></li>
+									</ul> -->
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="#third">Working</a></li>
+
+                                <li class="nav-item"><a class="nav-link" href="#fifth">Procedure</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#sixth">Observation Table</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#seventh">Calculations</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#eighth">Result</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                    <div class="col-lg-9">
+                        <h2 class="font-weight-extra-normal text-7 mb-2" id="first"><strong class="font-weight-extra-bold">Aim</strong> of Experiment</h2>
+                        <p>To study and determine crushing efficiency, reduction ratio, and power required.<br>
+                            <div class="container">
+                                <img style=" width: 550px " height="400px " src="img/jaw1.png " alt="Ball_Mill_Experiment ">
+                            </div>
+                        </p>
+                        <h2 class="font-weight-extra-normal text-7 mb-2" id="second"><strong class="font-weight-extra-bold">Theory</strong> of Experiment</h2>
+                        <p>Crushing is the process of reducing the size of solid particles into definite smaller sizes. Jaw crushers are major size reduction machines used in mechanical, metallurgical and allied industries. The crusher crushes the feed by
+                            some moving units against a stationary unit or against another moving unit by the applied pressure, impact, and shearing or combine action on them. They are available in various sizes and capacities ranging from 0.3 ton/hr
+                            to 50 ton/hr. They are classified based on different factors like product size and mechanism used. Based on the mechanism used crushers are of three types namely (i) Cone crusher (ii) Jaw crusher, and (iii) Impact crusher.
+                            <br>
+                            <p>Fracture occurs in the feed material when the strain developed in it due to sufficiently applied impact forces, pressure or shearing effect exceeds the elastic limit. Generally crushers are very rugged, massive and heavy in
+                                design. The contact surfaces are equipped with replaceable liners made from high tensile manganese or other alloy steel sheet having either flat or corrugated surfaces. Shearing pins or nest in heavy coiled springs are
+                                provided in the crusher to guard against shock and over load.</p>
+                        </p>
+
+                        <p>A crusher may be considered as primary, secondary or fine crusher depending on the size reduction factor:</p>
+
+                        <p><strong>(a) Primary crusher:</strong> The raw material from mines is processed first in primary crushers. The input of such crushers is relatively wider and the output products are coarser in size. Examples: Jaw crusher, Gyratory
+                            crusher.
+                        </p>
+                        <p><strong>(b) Secondary crusher:</strong> The crushed rocks from primary crusher are sent to secondary crusher for further size reduction. Examples: Cone crusher, reduction gyratory crusher, spring rolls, disk crushers etc.
+                        </p>
+                        <p><strong>(c) Fine crushers:</strong> Fine crushers have relatively small openings, and are used to crush the feed material into more uniform and finer product. Examples: Gravity stamp.
+                        </p>
+                        <h2 class="font-weight-extra-normal text-7 mb-2" id="third"><strong class="font-weight-extra-bold"> Working</strong> of Experiment</h2>
+                        <p>
+                            The material to be crushed is dropped between two rigid pieces of metal, one of which then move inwards towards the rock, and the rock is crushed as it has a lower breaking point than the opposing metal piece. Jaw crusher movement is guided by pivoting
+                            one end of the swinging jaw and an eccentric motion located at the opposite end. The size of a jaw crusher is designated by the rectangular or square opening at the top of the jaws . For example, a 22 x 30 jaw crusher has an
+                            opening of 22" by 30", a 46 x 46 jaw crusher has a opening of 46 square inch. Generally primary jaw crushers have the square opening design, and secondary jaw crushers have rectangular opening design. Jaw crushers are used
+                            as primary crushers in a mine or ore processing plant or the first step in the process of reducing rock. They follow “crush using compression” mechanism.
+                        </p>
+                        <h2 class="font-weight-extra-normal text-7 mb-2" id="fifth"><strong class="font-weight-extra-bold">Procedure</strong></h2>
+                        <p>
+                            <ol>
+                                <li>Take 5-6 pieces of brick.
+                                </li>
+                                <li>Note the weight of each piece and the corresponding equivalent diameter</li>
+                                <li>Feed the brick piece one by one to the jaw crusher and collect the total material.</li>
+                                <li>Note the total time of crushing.</li>
+                                <li>Subject the crushed material to sieve analysis.</li>
+                                <li>Take weight of material retained on each screen.
+                                </li>
+
+                            </ol>
+                        </p>
+                        <h2 class="font-weight-extra-normal text-7 mb-2" id="sixth"><strong class="font-weight-extra-bold">Observation Table</strong></h2>
+                        <div class="container mb-md-0">
+                            <h4>(a) For Feed:</h4>
+                        </div>
+                        <p>
+                            <div style="overflow-x:auto;">
+                                <table>
+                                    <tr>
+                                        <th>S.N.</th>
+                                        <th>Mesh Number
+                                        </th>
+                                        <th>Mesh opening
+                                        </th>
+
+                                        <th>Mass retained
+                                        </th>
+                                        <th>Mass fraction
+                                        </th>
+                                        <th>nd<sup>3</sup></th>
+                                        <th>nd<sup>4</sup></th>
+
+                                    </tr>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3.</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4.</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </p>
+                        <div class="container mb-md-0">
+                            <h4>(b) For Product:</h4>
+                        </div>
+                        <p>
+                            <div style="overflow-x:auto;">
+                                <table>
+                                    <tr>
+                                        <th>S.N.</th>
+                                        <th>Mesh Number
+                                        </th>
+                                        <th>Mesh opening
+                                        </th>
+
+                                        <th>Mass retained
+                                        </th>
+                                        <th>Mass fraction
+                                        </th>
+                                        <th>nd<sup>3</sup></th>
+                                        <th>nd<sup>4</sup></th>
+
+                                    </tr>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3.</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4.</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </p>
+
+                        <h2 class="font-weight-extra-normal text-7 mb-2" id="seventh"><strong class="font-weight-extra-bold">Calculations</strong></h2>
+                        <p>
+                            <div class="container mb-md-0">
+                                <h4>(b) For Feed:</h4>
+                            </div>
+                            <p>
+                                <div class="container ml-4">
+
+                                    &#8721;nd<sup>3</sup> = ...<br> &#8721;nd<sup>4</sup> = ...
+                                </div>
+
+                            </p>
+                            <div class="container mb-md-0">
+                                <h4>(b) For Product:</h4>
+                                <div class="container ml-4">
+
+                                    Volume mean diameter= D<sub>p,feed</sub> &#247; D<sub>p,product</sub><br><br> P= 0.3162 &times; Wi &times; M &times;
+                                    <box>[ 1 &frasl; &#8730;D
+                                        <sub>p,product</sub> −
+                                        <box>1 &frasl; &#8730;D
+                                            <sub>p,feed</sub> </box>]</box>
+
+                                </div>
+                                <div class="container">
+
+
+                                </div>
+                            </div>
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="page-footer font-small bg-footer">
+
+
+
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left mt-5 main-footer-bg" style="padding-top: 2%;">
+
+                <!-- Grid row -->
+                <div class="row mt-3">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-white">
+
+                        <!-- Content -->
+                        <h6 class="text-uppercase font-weight-bold text-warning">Virtual Lab</h6>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold text-warning">Utilities</h6>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                            <a href="#">Experiment</a>
+                        </p>
+                        <p>
+                            <a href="#">Video Explanations</a>
+                        </p>
+                        <p>
+                            <a href="#">Simulations</a>
+                        </p>
+                        <p>
+                            <a href="#">Assesment</a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-white">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold text-warning">Useful links</h6>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                            <a href="#!">Feedback</a>
+                        </p>
+                        <p>
+                            <a href="#!">Submit your Ideas</a>
+                        </p>
+                        <p>
+                            <a href="#!">Contact Us</a>
+                        </p>
+                        <p>
+                            <a href="#!">Help</a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-white">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold text-warning">Contact</h6>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                            <i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+                        <p>
+                            <i class="fa fa-envelope mr-3"></i> info@example.com</p>
+                        <p>
+                            <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                        <p>
+                            <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3 copy-bg">© 2020 Copyright:
+                <a href="https://mdbootstrap.com/">virtuallab.com</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+    </div>
+
+    <script src="vendor/jquery/jquery.min.js "></script>
+    <script src="vendor/jquery.appear/jquery.appear.min.js "></script>
+    <script src="vendor/jquery.easing/jquery.easing.min.js "></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.min.js "></script>
+    <script src="master/style-switcher/style.switcher.js " id="styleSwitcherScript " data-base-path=" " data-skin-src=" "></script>
+    <script src="vendor/popper/umd/popper.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
+    <script src="vendor/common/common.min.js "></script>
+    <script src="vendor/jquery.validation/jquery.validate.min.js "></script>
+    <script src="vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js "></script>
+    <script src="vendor/jquery.gmap/jquery.gmap.min.js "></script>
+    <script src="vendor/jquery.lazyload/jquery.lazyload.min.js "></script>
+    <script src="vendor/isotope/jquery.isotope.min.js "></script>
+    <script src="vendor/owl.carousel/owl.carousel.min.js "></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
+    <script src="vendor/vide/jquery.vide.min.js "></script>
+    <script src="vendor/vivus/vivus.min.js "></script>
+    <!-- Theme Base, Components and Settings -->
+    <script src="js/theme.js "></script>
+    <!-- Theme Initialization Files -->
+    <script src="js/theme.init.js "></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../../../../www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-42715764-5', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>
