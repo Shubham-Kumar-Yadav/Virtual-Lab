@@ -63,9 +63,9 @@
 						<div class="header-column">
 							<div class="header-row">
 								<div class="header-logo">
-									<a href="index.html">
+									<a href="/">
 										<img alt="Virtual Lab" width="100" height="48" data-sticky-width="82"
-											data-sticky-height="40" src="img/Icon ionic-logo-buffer.svg">
+											data-sticky-height="40" src="Icon ionic-logo-buffer.svg">
 									</a>
 								</div>
 							</div>
@@ -80,7 +80,7 @@
 											<ul class="nav nav-pills" id="mainNav">
 												<li class="dropdown"> <a
 														class="dropdown-item dropdown-toggle text-primary"
-														href="index.html"> Home </a>
+														href="/"> Home </a>
 
 												</li>
 												<li class="dropdown"> <a
@@ -89,7 +89,7 @@
 														Experiment </a>
 														<ul class="dropdown-menu">
 															<li class="dropdown-submenu"> <a class="dropdown-item"
-																	href="ball_mill.html">Ball Mill</a>
+																	href="/ballmill">Ball Mill</a>
 															
 															</li>
 															<li class="dropdown-submenu"> <a class="dropdown-item"
@@ -101,7 +101,7 @@
 															
 															</li>
 															<li class="dropdown-submenu"> <a class="dropdown-item"
-																	href="rotap_sieve.html">Rotap Sieve Shaker</a>
+																	href="/rotapsieve">Rotap Sieve Shaker</a>
 																
 															</li>
 															<li class="dropdown-submenu"> <a class="dropdown-item"
@@ -118,7 +118,7 @@
 												</li>
 												<li class="dropdown"> <a
 														class="dropdown-item dropdown-toggle text-primary"
-														href="about-us.html">
+														href="/about">
 														About Us </a>
 
 												</li>
@@ -129,7 +129,7 @@
 												</li>
 												<li class="dropdown"> <a
 														class="dropdown-item dropdown-toggle text-primary"
-														href="contact.html">
+														href="/contact">
 														Contact </a>
 
 												</li>
@@ -213,7 +213,7 @@
 								class="font-weight-extra-bold">Aim</strong> of Experiment</h2>
 						<p>To determine reduction ratio and critical speed of a ball mill and also determine the
 							energy required for crushing the given feed and thus obtain the work index for the same.<br>
-							<img style="width: 100%;" src="img/ball_mill_aim.PNG" alt="Ball_Mill_Experiment">
+							<img style="width: 100%;" src="ball_mill_aim.PNG" alt="Ball_Mill_Experiment">
 						</p>
 						<!-- <div class="hiscon float-left image-fluid" width="300" height="211">
 							<div class="over">
@@ -248,7 +248,7 @@
 							with the wall.
 						<br>
 						<div style="text-align: center;">
-							<img style="width: 35%;" src="img/ball_mill_theory.png" alt="">
+							<img style="width: 35%;" src="ball_mill_theory.png" alt="">
 						</div>
 						<br>
 						</p>
@@ -318,16 +318,16 @@
 						<p>
 							<ul>
 								<li>Energy required for crushing
-									<img src="img/ball_mill_formulae_energy_required.png" alt="">
+									<img src="ball_mill_formulae_energy_required.png" alt="">
 								</li>
 								<li>Work Index
-									<img src="img/ball_mill_formulae_work_index.png" alt="">
+									<img src="ball_mill_formulae_work_index.png" alt="">
 									<p>Where W = predicted mill energy consumption</p>
 									<p>P, F = 80% passing sizes in μm of feed (F) and product(P)</p>
 								</li>
 								<li>Reduction ratio = Feed Size / Product Size</li>
 								<li>Critical speed of the ball mill
-									<img src="img/ball_mill_formulae_critical_speed.png" alt="">
+									<img src="ball_mill_formulae_critical_speed.png" alt="">
 								</li>
 							</ul>
 						</p>
@@ -356,9 +356,11 @@
 						<h2 class="font-weight-extra-normal text-7 mb-2" id="sixth"><strong
 								class="font-weight-extra-bold">Observation Table</strong></h2>
 						<p>
-							<div style="overflow-x:auto;">
-								<table>
-								  <tr>
+							
+						<form method="GET" action="/ballmillobservation">
+						  <div style="overflow-x:auto;">
+							<table>
+								<tr>
 									<th>S.N.</th>
 									<th>Sieve
 										Number</th>
@@ -369,81 +371,97 @@
 										(D<sub>pi</sub>)</th>
 									<th>Mass
 										retained</th>
-									<th>Mass
-										fraction</th>
-									<th>Cumulative
-										mass fraction</th>
-									<th>Reciprocal of
-										avarage
-										particle size
-										(1/D<sub>pi</sub>)</th>
-								  </tr>
-								  <tr>
-									<td>1.</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								  </tr>
-								  <tr>
-									<td>2.</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								  </tr>
-								  <tr>
-									<td>3.</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								  </tr>
-								  <tr>
-									<td>4.</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								  </tr>
-								  <tr>
-									<td>5.</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								  </tr>
-								</table>
-							  </div>
-						</p>
 
-						<h2 class="font-weight-extra-normal text-7 mb-2" id="seventh"><strong
+								</tr>
+								<tr>
+									<td>1.</td>
+									<td><input type="number" , min="0" , step="0.0001" name="S[0]" required></td>
+									<td><input type="number" , min="0" , step="0.0001" name="SO[0]" required></td>
+									<td><input type="number" , min="0" , step="0.0001" name="AV[0]" required></td>
+									<td><input type="number" , min="0" , step="0.0001" name="MR[0]" required></td>
+								</tr>
+								<tr>
+									<td>2.</td>
+									<td><input type="number" , min="0" , step="0.0001" name="S[1]" required></td>
+									<td><input type="number" , min="0" , step="0.0001" name="SO[1]" required></td>
+									<td><input type="number" , min="0" , step="0.0001" name="AV[1]" required></td>
+									<td><input type="number" , min="0" , step="0.0001" name="MR[1]" required></td>
+								</tr>
+								<tr>
+									<td>3.</td>
+									<td><input type="number" , min="0" , step="0.0001" name="S[2]" required></td>
+									<td><input type="number" , min="0" , step="0.0001" name="SO[2]" required></td>
+									<td><input type="number" , min="0" , step="0.0001" name="AV[2]" required></td>
+									<td><input type="number" , min="0" , step="0.0001" name="MR[2]" required></td>
+								</tr>
+								<tr>
+									<td>4.</td>
+									<td><input type="number" , min="0" , step="0.0001" name="S[3]" required></td>
+									<td><input type="number" , min="0" , step="0.0001" name="SO[3]" required></td>
+									<td><input type="number" , min="0" , step="0.0001" name="AV[3]" required></td>
+									<td><input type="number" , min="0" , step="0.0001" name="MR[3]" required></td>
+								</tr>
+								<tr>
+									<td>5.</td>
+									<td><input type="number" , min="0" , step="0.0001" name="S[4]" required></td>
+									<td><input type="number" , min="0" , step="0.0001" name="SO[4]" required></td>
+									<td><input type="number" , min="0" , step="0.0001" name="AV[4]" required></td>
+									<td><input type="number" , min="0" , step="0.0001" name="MR[4]" required></td>
+								</tr>
+							
+							</table>
+						  </div>
+						 </p>
+
+						 <h2 class="font-weight-extra-normal text-7 mb-2" id="seventh"><strong
 								class="font-weight-extra-bold">Observation</strong></h2>
-						<p>
-							<ul>
-								<li>Quantity of feed sample = </li>
-								<li>D<sub>f</sub> = </li>
-								<li>Time taken for 1 complete revolution (no load) = </li>
-								<li>Time taken for 1 complete revolution (on load) = </li>
-								<li>Total time the mill is put to operation = </li>
-								<li>Energy meter constants for ball mill = </li>
-							</ul>
-						</p>
+						 <p>
+						<!-- <ul>
+							<li>Quantity of feed sample = </li>
+							<li>D<sub>f</sub> = </li>
+							<li>Time taken for 1 complete revolution (no load) = </li>
+							<li>Time taken for 1 complete revolution (on load) = </li>
+							<li>Total time the mill is put to operation = </li>
+							<li>Energy meter constants for ball mill = </li>
+						</ul> -->
+							<table>
+								<tr>
+									<td>Quantity of feed sample(D<sub>f</sub>) </td>
+									<td><input type="number" min="0" step="0.001" name="FS" required></td>
+								</tr>
+
+								<tr>
+									<td>Feed size (D<sub>f</sub>) </td>
+									<td><input type="number" min="0" step="0.001" name="DF" required></td>
+								</tr>
+
+								<tr>
+									<td>Time taken for 1 complete revolution (no load)</td>
+									<td><input type="number" min="0" step="0.001" name="TNL" required></td>
+								</tr>
+
+								<tr>
+									<td>Time taken for 1 complete revolution (on load)</td>
+									<td><input type="number" min="0" step="0.001" name="TL" required></td>
+								</tr>
+
+								<tr>	
+									<td>Total time the mill is put to operation</td>
+									<td><input type="number" min="0" step="0.001" name="TO" required></td>
+								</tr>
+
+								<tr>
+									<td>Energy meter constants for ball mill</td>
+									<td><input type="number" min="0" step="0.001" name="EMC" required></td>
+								</tr>
+
+								<tr>
+									<td colspan="2" ><input id="sub" type="Submit" , value="Submit" required> </td>
+								</tr>
+
+							  </table>	
+						    </p>
+					    </form>
 
 						<h2 class="font-weight-extra-normal text-7 mb-2" id="eighth"><strong
 								class="font-weight-extra-bold">Result</strong></h2>
