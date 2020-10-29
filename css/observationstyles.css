@@ -1,0 +1,59 @@
+body{
+     margin: 0;
+     padding: 0;
+     font-family: sans-serif;
+     color: #0246FF;
+}
+
+
+
+
+.observationtable{
+   width: 100%;
+   border-collapse: collapse;
+}
+
+.observationtable td, .observationtable th{
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+}
+
+.observationtable th{
+     background-color: #ffa000;
+     color: #e4e4e4;
+}
+
+.observationtable tbody tr:nth-child(even){
+    background-color: #f5f5f5;
+}
+
+@media(max-width: 500px){
+    .observationtable thead{
+        display: none;
+    }
+    .observationtable, .observationtable tbody, .observationtable tr, .observationtable td{
+        display: block;
+        width: 100%;
+    } 
+    .observationtable tr{
+        margin-bottom: 15px;
+    }
+    .observationtable td{
+        text-align: right;
+        padding-left: 50%;
+        text-align: right;
+        position: relative;
+    }
+    .observationtable td::before{
+         content: attr(data-label);
+         position: absolute;
+         left: 0;
+         width: 50%;
+         padding-left: 15px;
+         font-size: 15px;
+         font-weight: bold;
+         text-align: left;
+    }
+}
